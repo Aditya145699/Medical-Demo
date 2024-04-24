@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 :root {
-  --green: #16a085;
-  --black: #444;
-  --light-color: #777;
+  --orange: #f27815;
+  --black: #000000;
+  --light-color: #ffffff;
   --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
   --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
-  --border: 0.2rem solid var(--green);
+  --border: 0.2rem solid var(--orange);
 }
 
 * {
@@ -48,7 +48,7 @@ section:nth-child(even) {
 
 .heading span {
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--black);
 }
 
 .btn {
@@ -59,7 +59,7 @@ section:nth-child(even) {
   border: var(--border);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
-  color: var(--green);
+  color: var(--black);
   cursor: pointer;
   font-size: 1.7rem;
   background: #fff;
@@ -68,18 +68,18 @@ section:nth-child(even) {
 .btn span {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
-  background: var(--green);
+  background: var(--orange);
   color: #fff;
   margin-left: 0.5rem;
 }
 
 .btn:hover {
-  background: var(--green);
+  background: var(--orange);
   color: #fff;
 }
 
 .btn:hover span {
-  color: var(--green);
+  color: var(--orange);
   background: #fff;
   margin-left: 1rem;
 }
@@ -95,16 +95,22 @@ section:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: #f1ab5b;
 }
 
 .header .logo {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: var(--black);
-}
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Vertically center the items */
+  text-decoration: none;
+} /* Logo styles */
 
-.header .logo i {
-  color: var(--green);
+.header .logo img {
+  size: 5;
+  width: 60px; /* Adjust the width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add some spacing between the logo image and text */
 }
 
 .header .navbar a {
@@ -114,14 +120,14 @@ section:nth-child(even) {
 }
 
 .header .navbar a:hover {
-  color: var(--green);
+  color: var(--black);
 }
 
 #menu-btn {
   font-size: 2.5rem;
   border-radius: 0.5rem;
   background: #eee;
-  color: var(--green);
+  color: var(--orange);
   padding: 1rem 1.5rem;
   cursor: pointer;
   display: none;
@@ -153,8 +159,8 @@ section:nth-child(even) {
 }
 
 .home .content p {
-  font-size: 1.7rem;
-  color: var(--light-color);
+  font-size: 1.5rem;
+  color: var(--black);
   line-height: 1.8;
   padding: 1rem 0;
 }
@@ -177,7 +183,7 @@ section:nth-child(even) {
 
 .icons-container .icons i {
   font-size: 4.5rem;
-  color: var(--green);
+  color: var(--orange);
   padding-bottom: 0.7rem;
 }
 
@@ -190,7 +196,7 @@ section:nth-child(even) {
 
 .icons-container .icons p {
   font-size: 1.7rem;
-  color: var(--light-color);
+  color: var(--black);
 }
 
 .services .box-container {
@@ -208,7 +214,7 @@ section:nth-child(even) {
 }
 
 .services .box-container .box i {
-  color: var(--green);
+  color: var(--orange);
   font-size: 5rem;
   padding-bottom: 0.5rem;
 }
@@ -220,7 +226,7 @@ section:nth-child(even) {
 }
 
 .services .box-container .box p {
-  color: var(--light-color);
+  color: var(--black);
   font-size: 1.4rem;
   line-height: 2;
 }
@@ -252,7 +258,7 @@ section:nth-child(even) {
 }
 
 .about .row .content p {
-  color: var(--light-color);
+  color: var(--black);
   padding: 1rem;
   font-size: 1.5rem;
   line-height: 1.8;
@@ -287,7 +293,7 @@ section:nth-child(even) {
 }
 
 .doctors .box-container .box span {
-  color: var(--green);
+  color: var(--orange);
   font-size: 1.5rem;
 }
 
@@ -300,14 +306,14 @@ section:nth-child(even) {
   width: 5rem;
   line-height: 4.5rem;
   font-size: 2rem;
-  color: var(--green);
+  color: var(--orange);
   border-radius: 0.5rem;
   border: var(--border);
   margin: 0.3rem;
 }
 
 .doctors .box-container .box .share a:hover {
-  background: var(--green);
+  background: var(--orange);
   color: #fff;
   box-shadow: var(--box-shadow);
 }
@@ -396,7 +402,7 @@ section:nth-child(even) {
 }
 
 .review .box-container .box .text {
-  color: var(--light-color);
+  color: var(--black);
   line-height: 1.8;
   font-size: 1.6rem;
   padding-top: 4rem;
@@ -408,7 +414,7 @@ section:nth-child(even) {
   top: -4rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--green);
+  background: var(--orange);
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   height: 25rem;
@@ -458,16 +464,16 @@ section:nth-child(even) {
 
 .blogs .box-container .box .content .icon a {
   font-size: 1.4rem;
-  color: var(--light-color);
+  color: var(--black);
 }
 
 .blogs .box-container .box .content .icon a i {
   padding-right: 0.5rem;
-  color: var(--green);
+  color: var(--orange);
 }
 
 .blogs .box-container .box .content .icon a:hover {
-  color: var(--green);
+  color: var(--orange);
 }
 
 .blogs .box-container .box .content h3 {
@@ -475,7 +481,7 @@ section:nth-child(even) {
   font-size: 3rem;
 }
 .blogs .box-container .box .content p {
-  color: var(--light-color);
+  color: var(--black);
   font-size: 1.5rem;
   line-height: 1.8;
   padding: 1rem 0;
@@ -495,7 +501,7 @@ section:nth-child(even) {
 .footer .box-container .box a {
   display: block;
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: var(--black);
   padding: 1rem 0;
 }
 
@@ -514,12 +520,12 @@ section:nth-child(even) {
   margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
-  color: var(--light-color);
+  color: var(--black);
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 .footer .credit span {
-  color: var(--green);
+  color: var(--orange);
 }
 
 /*media queries*/
