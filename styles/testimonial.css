@@ -87,14 +87,14 @@
     display: flex;
 }
 
-a {
+.testimonial  {
     margin: 0 10px;
     color: #fff;
     font-size: 1.5rem;
     transition: all 400ms ease;
 }
 
-a:hover {
+.testimonial  a:hover {
     color: #222;
 }
 

@@ -509,7 +509,11 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
   gap: 2rem;
-  background: #f27815;
+  
+}
+section.footer{
+
+  margin-top: 3rem;
 }
 
 .footer .box-container .box h3 {
