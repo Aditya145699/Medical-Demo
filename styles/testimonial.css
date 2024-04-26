@@ -17,7 +17,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(120deg, #fcd9c3 0%, #fcc78e 100%);
+    background-image: linear-gradient(120deg, #ff995a 0%, #ffa84b 100%);
     padding: 10px 20px;
     position: relative;
 }
@@ -88,7 +88,7 @@
 }
 
 .testimonial  {
-    margin: 0 10px;
+    /* margin: 0 10px; */
     color: #fff;
     font-size: 1.5rem;
     transition: all 400ms ease;
@@ -104,5 +104,5 @@
 }
 
 .checked{
-    color: orange;
+    color: yellow;
 }

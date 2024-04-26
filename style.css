@@ -552,6 +552,14 @@ section.footer{
   color: var(--orange);
 }
 
+.Copyright-area{
+  background: #202020;
+  font-size: 1.5rem;
+  padding: 1rem 9%;
+}
+.Copyright-text{
+  color: #878787;
+}
 /* hero animation */
 
 .circles {
