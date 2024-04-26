@@ -6,7 +6,7 @@
 
 .testimonial-box {
     position: relative;
-   
+
 }
 
 
@@ -87,22 +87,22 @@
     display: flex;
 }
 
-.testimonial  {
+.testimonial {
     /* margin: 0 10px; */
     color: #fff;
     font-size: 1.5rem;
     transition: all 400ms ease;
 }
 
-.testimonial  a:hover {
+.testimonial a:hover {
     color: #222;
 }
 
-.stars{
+.stars {
     display: flex;
     gap: 2px;
 }
 
-.checked{
+.checked {
     color: yellow;
 }
