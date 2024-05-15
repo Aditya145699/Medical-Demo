@@ -52,7 +52,7 @@ section {
   color: var(--black);
 }
 
-.btn {
+.contact-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -64,9 +64,10 @@ section {
   cursor: pointer;
   font-size: 1.7rem;
   background: #fff;
+  text-decoration: none;
 }
 
-.btn span {
+.contact-btn span {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   background: var(--orange);
@@ -74,12 +75,12 @@ section {
   margin-left: 0.5rem;
 }
 
-.btn:hover {
+.contact-btn:hover {
   background: var(--orange);
   color: #fff;
 }
 
-.btn:hover span {
+.contact-btn:hover span {
   color: var(--orange);
   background: #fff;
   margin-left: 1rem;
