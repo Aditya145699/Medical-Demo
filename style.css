@@ -123,6 +123,7 @@ section {
 
 .header .navbar a {
   font-size: 1.7rem;
+  text-decoration: none;
   color: var(--black);
   margin-left: 2rem;
   transition: none;
@@ -521,17 +522,18 @@ section.footer {
 }
 
 .footer .box-container .box a {
+  text-decoration: none;
   display: block;
   font-size: 1.5rem;
   color: #fff;
   padding: 2px;
 }
-.footer hr {
+/* .footer hr {
   background-color: var(--orange);
   width: 70px;
   height: 3px;
   margin: 1rem 0rem;
-}
+} */
 
 .footer .box-container .box a i {
   padding-right: 0.5rem;
