@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Flow+Circular&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Neon&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Freeman&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 :root {
   --orange: #eb701def;
@@ -12,6 +18,9 @@
 
 * {
   font-family: "Poppins", sans-serif;
+
+  font-optical-sizing: auto;
+  font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,8 +38,16 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,h2,h3,h4,h5{
+  font-family: 'Freeman','san-serif';
+}
+.heading span{
+  font-family: 'Freeman','san-serif';;
+}
+
 section {
   padding: 2rem 9%;
+  margin-bottom: 3rem;
 }
 
 .light-bg {
@@ -87,17 +104,18 @@ section {
 }
 
 .header {
-  padding: 2rem;
+  padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--light-color);
+  max-height: 80px;
 }
 
 .header .logo {
@@ -153,14 +171,24 @@ section {
   align-items: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-top: 10rem;
+  padding-top: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  max-height: 85vh;
   background-color: var(--light-color);
+  overflow: hidden;
   /* background: url(./img/bg.jpg); */
 }
 
 .home .image {
   flex: 1 1 45rem;
   z-index: 99;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
 }
 
 .home .image img {
@@ -175,12 +203,12 @@ section {
   font-size: 4.5rem;
   color: var(--black);
   line-height: 1.8;
-  text-shadow: var(--text-shadow);
+  color: #fff;
 }
 
 .home .content p {
   font-size: 1.5rem;
-  color: var(--black);
+  color: #fff;
   line-height: 1.8;
   padding: 1rem 0;
 }
@@ -260,10 +288,19 @@ section {
 
 .about .row .image {
   flex: 1 1 45rem;
+  overflow: hidden;
+  border-radius: 30px;
+
 }
 
 .about .row .image img {
   width: 100%;
+  border-radius: 30px;
+}
+
+.about .row .image img:hover {
+  transform: scale(1.1);
+  transition: 2s ease;
 }
 
 .about .row .content {
@@ -529,6 +566,7 @@ section.footer {
   color: #fff;
   padding: 2px;
 }
+
 /* .footer hr {
   background-color: var(--orange);
   width: 70px;
@@ -725,6 +763,49 @@ section.footer {
   font-size: 2.2rem;
 }
 
+.slide-show {
+  position: relative;
+  max-height: calc(85vh - 80px);
+}
+
+.overlay {
+  background-color: #000000;
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 74%) 10%,
+      rgba(0, 0, 0, 0) 100%);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+}
+
+.overlay-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 1rem;
+  color: #fff;
+  height: 100%;
+}
+
+.home .content h3 {
+  color: #ff9a56ef;
+  font-size: 10rem;
+  margin: 0;
+  line-height: 8rem;
+
+}
+
+.home .content p {
+  margin: 0;
+  font-size: 5rem;
+}
+
+
+
 @media screen and (min-width: 900px) {
   .box4 {
     grid-column-start: 2;
@@ -790,5 +871,18 @@ section.footer {
     font-size: 2rem;
     display: block;
     margin: 2.5rem;
+  }
+
+  .home .content h3 {
+    color: #ff9a56ef;
+    font-size: 5rem;
+    margin: 0;
+    line-height: 3rem;
+
+  }
+
+  .home .content p {
+    margin: 0;
+    font-size: 2rem;
   }
 }
